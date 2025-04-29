@@ -1,0 +1,169 @@
+/* 
+
+body {
+    background-color: #f8f9fc;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .dashboard-container {
+    padding: 30px;
+    margin-left: 240px; 
+  }
+  
+  .header {
+    font-size: 26px;
+    font-weight: 600;
+    color: #5e17eb;
+    margin-bottom: 20px;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  
+  .button-group button {
+    background-color: #5e17eb;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s ease;
+  }
+  
+  .button-group button:hover {
+    background-color: #470cd1;
+  }
+  
+  .card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(149, 157, 165, 0.2);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .card h3 {
+    margin-bottom: 10px;
+    color: #222;
+  }
+  
+  .status-text {
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .status-text.good {
+    color: #00c897;
+  }
+  
+  .status-text.bad {
+    color: #ff5a5f;
+  }
+  
+  .depression-box {
+    background: #f5f5ff;
+    border-left: 5px solid #5e17eb;
+    padding: 20px;
+    border-radius: 12px;
+  }
+  
+  .depression-box ul {
+    padding-left: 20px;
+  }
+  
+  .depression-box li {
+    font-size: 14px;
+  }
+   */
+
+
+   /* Dashboard.css */
+
+body {
+    background-color: #f8f9fc;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .dashboard-container {
+    padding: 30px;
+    margin-left: 240px; /* Space for sidebar if added */
+  }
+  
+  .header {
+    font-size: 26px;
+    font-weight: 600;
+    color: #5e17eb;
+    margin-bottom: 20px;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  
+  .button-group button,
+  .depression-button {
+    background-color: #5e17eb;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s ease;
+  }
+  
+  .button-group button:hover,
+  .depression-button:hover {
+    background-color: #470cd1;
+  }
+  
+  .card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(149, 157, 165, 0.2);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .card h3 {
+    margin-bottom: 10px;
+    color: #222;
+  }
+  
+  .status-text {
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .status-text.good {
+    color: #00c897;
+  }
+  
+  .status-text.bad {
+    color: #ff5a5f;
+  }
+  
+  .depression-box {
+    background: #f5f5ff;
+    border-left: 5px solid #5e17eb;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 30px;
+  }
+  
+  .depression-box ul {
+    padding-left: 20px;
+  }
+  
+  .depression-box li {
+    font-size: 14px;
+  }
+  

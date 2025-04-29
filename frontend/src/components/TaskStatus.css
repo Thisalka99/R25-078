@@ -1,0 +1,68 @@
+/* TaskStatus.css */
+
+body {
+    background-color: #f8f9fc;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .task-status-container {
+    padding: 30px;
+    margin-left: 240px;
+  }
+  
+  .status-header {
+    font-size: 24px;
+    font-weight: 600;
+    color: #5e17eb;
+    margin-bottom: 20px;
+  }
+  
+  .no-task {
+    font-size: 16px;
+    color: #888;
+  }
+  
+  .task-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(149, 157, 165, 0.15);
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .task-details {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .task-badge {
+    font-weight: 600;
+    margin-left: 8px;
+  }
+  
+  .task-badge.pending {
+    color: #ff8c00;
+  }
+  
+  .task-badge.completed {
+    color: #00c897;
+  }
+  
+  .status-button {
+    background-color: #5e17eb;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s;
+  }
+  
+  .status-button:hover {
+    background-color: #470cd1;
+  }
+  

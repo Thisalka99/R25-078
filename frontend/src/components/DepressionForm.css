@@ -1,0 +1,73 @@
+/* DepressionForm.css */
+
+body {
+    background-color: #f8f9fc;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .depression-form-container {
+    padding: 30px;
+    margin-left: 240px;
+    max-width: 800px;
+    margin-right: auto;
+  }
+  
+  .form-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #5e17eb;
+    margin-bottom: 25px;
+  }
+  
+  .depression-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(149, 157, 165, 0.2);
+  }
+  
+  .question-box {
+    margin-bottom: 25px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+  }
+  
+  .question-text {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .radio-group {
+    display: flex;
+    gap: 25px;
+    margin-top: 5px;
+  }
+  
+  .radio-option {
+    font-size: 15px;
+    color: #444;
+  }
+  
+  .submit-button {
+    margin-top: 30px;
+    padding: 12px 24px;
+    background-color: #5e17eb;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .submit-button:hover {
+    background-color: #470cd1;
+  }
+  
+  .submit-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
