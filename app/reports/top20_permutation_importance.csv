@@ -1,0 +1,21 @@
+feature,importance_mean,importance_std
+"1. Have You Been Feeling Sad Most of The Time During The Day, Especially Over The Last Two Weeks ?_Yes",0.06731181593357254,0.025165620382387503
+"1. Have You Been Feeling Sad Most of The Time During The Day, Especially Over The Last Two Weeks ?_No",0.06725272639912323,0.024689124390271978
+"3. Do You Feel Tired All The Time , Do You Find It Difficulty to Complete Day Today Usual Activity ?_Yes",0.057497089827266,0.021218790820554907
+2. Do You Feel Unhappy Even When You Do Your Favorite Activities ?_Yes,0.048635765347194174,0.025222018094095758
+2. Do You Feel Unhappy Even When You Do Your Favorite Activities ?_No,0.04420473859160895,0.023254295820465887
+"3. Do You Feel Tired All The Time , Do You Find It Difficulty to Complete Day Today Usual Activity ?_No",0.03640668600223864,0.019120178779456678
+What is Your Age group?_26-35,0.02674520385403517,0.017437695999284627
+10. Have you lost your appetite or found that you’re eating much less than usual?_No,0.022628481105442133,0.014272745868472185
+10. Have you lost your appetite or found that you’re eating much less than usual?_Yes,0.022628481105442133,0.014272745868472185
+7. Do you feel as if things won’t get better no matter what you do?_No,0.0221702886860524,0.018716236946937394
+7. Do you feel as if things won’t get better no matter what you do?_Yes,0.021938317146259746,0.0186235801966732
+"5. Do you often feel that you're not as capable as your friends, even when you try your best?_No",0.01471925538648578,0.01463969801409491
+"5. Do you often feel that you're not as capable as your friends, even when you try your best?_Yes",0.01471925538648578,0.01463969801409491
+What is Your Age group?_18-25,0.008899682428834354,0.01724415658877058
+"8. Lately, have you felt so overwhelmed or hopeless that you thought about giving up on everything and even Life?_Yes",0.005724949138801732,0.01707846437247085
+"9. Have you been having trouble falling asleep, waking early, or sleeping too much?_No",0.0002229625084012754,0.00020167717709549838
+"9. Have you been having trouble falling asleep, waking early, or sleeping too much?_Yes",0.0002229625084012754,0.00020167717709549838
+4. Do you often catch yourself getting distracted while working on something important?_No,0.00020269318945570491,0.00020269318945570491
+4. Do you often catch yourself getting distracted while working on something important?_Yes,0.00020269318945570491,0.00020269318945570491
+6. Do you often feel guilty about things that aren't your fault or feel worthless?_Yes,0.00014188523261899345,0.0001933569792820288

@@ -1,0 +1,15 @@
+column,dtype,non_null,missing,missing_pct,n_unique,is_numeric
+"1. Have You Been Feeling Sad Most of The Time During The Day, Especially Over The Last Two Weeks ?",object,501,0,0.0,2,False
+10. Have you lost your appetite or found that you’re eating much less than usual?,object,501,0,0.0,2,False
+2. Do You Feel Unhappy Even When You Do Your Favorite Activities ?,object,501,0,0.0,2,False
+"3. Do You Feel Tired All The Time , Do You Find It Difficulty to Complete Day Today Usual Activity ?",object,501,0,0.0,2,False
+4. Do you often catch yourself getting distracted while working on something important?,object,501,0,0.0,2,False
+"5. Do you often feel that you're not as capable as your friends, even when you try your best?",object,501,0,0.0,2,False
+6. Do you often feel guilty about things that aren't your fault or feel worthless?,object,501,0,0.0,2,False
+7. Do you feel as if things won’t get better no matter what you do?,object,501,0,0.0,2,False
+"8. Lately, have you felt so overwhelmed or hopeless that you thought about giving up on everything and even Life?",object,501,0,0.0,2,False
+"9. Have you been having trouble falling asleep, waking early, or sleeping too much?",object,501,0,0.0,2,False
+Depression Level,object,501,0,0.0,4,False
+Timestamp,object,501,0,0.0,501,False
+What is Your Age group?,object,501,0,0.0,5,False
+What is Your Gender,object,501,0,0.0,2,False

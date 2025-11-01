@@ -1,25 +1,45 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Login from './components/Login';
-import Register from './components/Register';
-import Dashboard from './components/Dashboard';
-import TaskEntry from './components/TaskEntry';
-import TaskStatus from './components/TaskStatus';
-import DepressionForm from './components/DepressionForm';
+import React from "react";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import AuthProvider, { useAuth } from "./auth/AuthContext";
 
-function App() {
+import AuthPage from "./components/AuthPage";
+import ProfileForm from "./components/ProfileForm";
+import TasksBoard from "./components/TasksBoard";
+import SchemaForm from "./components/SchemaForm";
+import TextAnalyzer from "./components/TextAnalyzer";
+import ChatInterview from "./components/ChatInterview"; // NEW (WhatsApp-style)
+import NavBar from "./components/NavBar";
+import GameBalloon from "./components/GameBalloon";
+import HomeCongrats from "./components/HomeCongrats";
+import "./index.css";
+
+function Private({ children }) {
+  const { user } = useAuth();
+  if (!user) return <AuthPage />;
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Register />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/task-entry" element={<TaskEntry />} />
-        <Route path="/task-status" element={<TaskStatus />} />
-        <Route path="/depression-form" element={<DepressionForm />} />
-      </Routes>
-    </BrowserRouter>
+    <>
+      <NavBar />
+      <div className="pagecontainer">{children}</div>
+    </>
   );
 }
 
-export default App;
+export default function App() {
+  return (
+    <AuthProvider>
+      <BrowserRouter>
+        <Routes>
+          {/* <Route path="/" element={<Navigate to="/chat" replace />} /> */}
+          <Route path="/chat" element={<Private><ChatInterview /></Private>} />
+          <Route path="/tasks" element={<Private><TasksBoard /></Private>} />
+          <Route path="/predict" element={<Private><SchemaForm /></Private>} />
+          <Route path="/text" element={<Private><TextAnalyzer /></Private>} />
+          <Route path="/profile" element={<Private><ProfileForm /></Private>} />
+          <Route path="*" element={<Navigate to="/chat" replace />} />
+        <Route path="/" element={<Navigate to="/tasks" replace />} />
+<Route path="/game" element={<Private><GameBalloon /></Private>} />
+        </Routes>
+      </BrowserRouter>
+    </AuthProvider>
+  );
+}

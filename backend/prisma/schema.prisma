@@ -1,0 +1,48 @@
+// backend/prisma/schema.prisma
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
+  password  String
+  ageGroup  String?
+  gender    String?
+  createdAt DateTime @default(now())
+
+  // RELATIONS
+  tasks    Task[]    @relation("UserTasks")
+  dayPlans DayPlan[] @relation("UserDayPlans")
+}
+
+model Task {
+  id          Int       @id @default(autoincrement())
+  userId      Int
+  title       String
+  isCompleted Boolean   @default(false)
+  createdAt   DateTime  @default(now())
+  completedAt DateTime?
+
+  // RELATION -> User
+  user User @relation("UserTasks", fields: [userId], references: [id])
+
+  @@index([userId])
+}
+
+model DayPlan {
+  id        Int      @id @default(autoincrement())
+  userId    Int
+  dueAt     DateTime // daily deadline
+  createdAt DateTime @default(now())
+
+  // RELATION -> User
+  user User @relation("UserDayPlans", fields: [userId], references: [id])
+
+  @@index([userId])
+}

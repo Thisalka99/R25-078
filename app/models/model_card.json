@@ -1,0 +1,7 @@
+{
+  "best_model": "GradientBoosting",
+  "scoring": "f1_weighted (tie: accuracy)",
+  "test_accuracy": 0.868421052631579,
+  "test_weighted_f1": 0.8074891529900018,
+  "notes": "Preprocessor fitted on train only in Step 2; CV used TRAIN+VAL; TEST untouched. Probabilities calibrated (sigmoid)."
+}
